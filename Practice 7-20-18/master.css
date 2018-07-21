@@ -1,0 +1,208 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  /* background: #000 no-repeat 50% 50%; */
+}
+body {
+  font-family: Helvetica, sans-serif;
+}
+/*****************************************************/
+
+
+/*** Contact Form ****/
+#contactForm {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  width: 95%;
+  height: 95%;
+  margin: 2.5%;
+  background: rgba(0,0,0,0.95);
+  border-radius: 3%;
+  color: white;
+  overflow: hidden;
+}
+#contactForm div {
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+  text-align: center;
+
+  /* border: solid 2px white; */
+}
+#contactForm div h1 {
+  text-align: center;
+  display: block;
+  margin-top: 3em;
+  font-weight: 100;
+}
+#contactForm div h1 hr {
+  width: 90%;
+  color: black;
+}
+
+#contactCancel {
+  font-size: 36px;
+  border: none;
+  outline: none;
+  background-color: rgba(255,255,255,0.75);
+  color: black;
+  cursor: pointer;
+  padding:  auto;
+  margin: auto;
+  border-radius: 4px;
+}
+/*****************************************************/
+
+
+/**** Provides BG for top half ****/
+#top-wrapper {
+  background: url("Me on Track3.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  background-position: center;
+}
+/*****************************************************/
+
+
+/**** Section 1 ****/
+.sec1 {
+  width: 100%;
+  height: 85vh;
+  /* background: url("Me on Track3.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  background-position: center; */
+}
+/*****************************************************/
+
+
+
+
+/**** Nav Bar ***/
+nav {
+  width: 100%;
+  height: 15vh;
+  margin: 0;
+  padding: 0;
+}
+
+.black {
+  background: rgba(0,0,0,0.7);
+  /* transition: 1s; */
+}
+.options.black {
+  background: rgba(0,0,0,0.8);
+}
+.options.active {
+  background: rgba(63, 181, 0, 0.8);
+}
+nav .button {
+  width: 100%;
+  text-align: center;
+  font-weight: lighter;
+  color: #fff;
+  cursor: pointer;
+}
+.rotate {
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+
+nav .options ul {
+  width: 100%;
+  list-style: none;
+  text-align: center;
+  margin:0;
+  margin-top: 0.6em;
+  margin-bottom: 1em;
+  padding: 0;
+}
+nav .options ul li {
+  display: inline;
+  width: 40px;
+  text-transform: uppercase;
+}
+/* #li1{
+  margin-right: 1.5em;
+}
+#li2 {
+  margin: 0 3em;
+} */
+#li3 {
+  /* margin-left: 1.5em; */
+}
+nav .options ul li a, nav .options ul li {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+.options:hover {
+  cursor: pointer;
+}
+/*****************************************************/
+
+/**** Back-to-Top Button ****/
+#toTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 98;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgba(0,0,0,0.75);
+  color: white;
+  cursor: pointer;
+  padding:  auto;
+  margin: auto;
+  border-radius: 4px;
+}
+#toTop.active {
+  background: rgba(63, 181, 0, 0.8);
+}
+/*****************************************************/
+
+
+
+/**** Section 2 ***/
+.sec2 {
+  width: 100%;
+  min-height: 87.5vh;
+  margin:0;
+  padding: 0;
+  background: #FFF no-repeat 50% 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+.sec2 .section-wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.section-wrapper .content {
+  width: 90%;
+  margin: 0 5%;
+  text-align: justify;
+}
+
+.heading {
+  text-align: center;
+  font-size: 4em;
+  margin: 0;
+  padding: 0;
+}
+
+
+/**** Media Queries ***/
+
+@media (max-width: 600px) {
+  .sec1 {
+    height: 75vh;
+  }
+  nav {
+  }
+}
