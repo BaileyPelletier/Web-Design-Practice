@@ -17,12 +17,16 @@ $(document).ready(() => {
     if (($("html, body").scrollTop() + 200) < navScrollPos) {
       $('.button').removeClass('rotate');
       $('nav').removeClass('black',800);
+
       $('#toTop').fadeOut('slow');
     } else if ($("html, body").scrollTop() >= (navScrollPos - 200)) {
       $('.button').addClass('rotate');
       $('nav').addClass('black',800);
+
       $('#toTop').fadeIn('slow');
     };
+
+
   });
 
   $('.options').on('sticky-start', () => {
